@@ -1,8 +1,8 @@
 {
-  "name": "portifolio",
+  "name": "sssouza.github.io",
   "version": "1.0.0",
   "description": "",
-  "homepage": "http://ssouza.github.io/",
+  "homepage": "https://sssouza.github.io/",
   "main": "index.js",
   "scripts": {
     "dev": "next",
