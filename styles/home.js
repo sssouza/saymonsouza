@@ -4,6 +4,21 @@ const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  h1 {
+    font-size: 28px;
+    line-height: 39px;
+  }
+
+  h2 {
+    font-size: 43px;
+    line-height: 53px;
+  }
+
+  h3 {
+    font-size: 29px;
+    line-height: 39px;
+  }
 `;
 
 const Presentation = styled.div`

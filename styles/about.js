@@ -1,5 +1,32 @@
 import styled from 'styled-components';
 
+const Container = styled.div`
+  h2 {
+    font-size: 35px;
+    line-height: 45px;
+  }
+
+  h1 {
+    font-size: 43px;
+    line-height: 53px;
+  }
+
+  h3 {
+    font-size: 29px;
+    line-height: 39px;
+  }
+
+  h4 {
+    font-size: 25px;
+    line-height: 35px;
+  }
+
+  p {
+    font-size: 18px;
+    line-height: 25px;
+  }
+`;
+
 const Wrapper = styled.div`
   background-color: #f9f9fd;
 `;
@@ -77,7 +104,7 @@ const Subtitle = styled.h3`
   padding-bottom: 24px;
 `
 
-const Cta = styled.h3`
+const Cta = styled.h4`
   padding-bottom: 16px;
 `;
 
@@ -130,5 +157,6 @@ export {
   ContactButton,
   Text,
   ResumeItem1,
-  ResumeItem2
+  ResumeItem2,
+  Container
 }
