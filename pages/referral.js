@@ -3,16 +3,16 @@ import React from 'react';
 import GlobalStyle from '../templates/index';
 import Header from '../components/header';
 
-const Partner = () => {
+const Referral = () => {
   return (
     <>
       <GlobalStyle />
       <Header />
       <div>
-        <p>Meliuz Challenge</p>
+        <p>Referral</p>
       </div>
     </>
   );
 }
 
-export default Partner;
+export default Referral;

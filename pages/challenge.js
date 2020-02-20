@@ -1,7 +1,18 @@
-export default function Challenge() {
+import React from 'react';
+
+import GlobalStyle from '../templates/index';
+import Header from '../components/header';
+
+const Challenge = () => {
   return (
-    <div>
-      <p>Meliuz Challenge</p>
-    </div>
+    <>
+      <GlobalStyle />
+      <Header />
+      <div>
+        <p>Meliuz Challenge</p>
+      </div>
+    </>
   );
 }
+
+export default Challenge;

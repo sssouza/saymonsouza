@@ -1,12 +1,11 @@
+import React from 'react';
 import Link from 'next/link';
 
 import GlobalStyle from '../templates/index';
+import Header from '../components/header';
 
 import {
   Wrapper,
-  Header,
-  HeaderDesktop,
-  HeaderMobile,
   Presentation,
   Title,
   Subtitle,
@@ -17,48 +16,36 @@ import {
   ProjectDescription,
 } from '../styles/home';
 
-export default function Index() {
+const Index = () => {
   return (
     <>
       <GlobalStyle />
       <Wrapper>
-        <Header>
-          <HeaderMobile>
-            <h1>Saymon Souza</h1>
-            <img src="sand.png" />
-          </HeaderMobile>
-          <HeaderDesktop>
-            <ul>
-              <li>
-                <Link href="/">
-                  <a>WORK</a>
-                </Link>
-              </li>
-              <li>
-                <Link href="/about">
-                  <a>ABOUT</a>
-                </Link>
-              </li>
-              <li>
-                <Link href="/contact">
-                  <a>CONTACT</a>
-                </Link>
-              </li>
-            </ul>
-          </HeaderDesktop>
-        </Header>
+        <Header />
         <Presentation>
           <Title>Hello!</Title>
           <Subtitle>I'm Saymon Souza, a Full-stack Web Developer</Subtitle>
           <MainProject>
-            <Img src="1.png" />
-            <ProjectDescription>Méliuz's Partner Page | 2019</ProjectDescription>
+            <Link href="/partner">
+              <a>
+                <Img src="1.png" alt="Méliuz's Partner Page | 2019" />
+                <ProjectDescription>Méliuz's Partner Page | 2019</ProjectDescription>
+              </a>
+            </Link>
           </MainProject>
           <Projects>
-              <Img src="2.png" />
-              <ProjectDescription>Méliuz's Challenge | 2018</ProjectDescription>
-              <Img src="3.png" />
-              <ProjectDescription>Méliuz's Referral Program | 2019</ProjectDescription>
+              <Link href="/challenge">
+                <a>
+                  <Img src="2.png" alt="Méliuz's Challenge | 2018" />
+                  <ProjectDescription>Méliuz's Challenge | 2018</ProjectDescription>
+                </a>
+              </Link>
+              <Link href="/referral">
+                <a>
+                  <Img src="3.png" alt="Méliuz's Referral Program | 2019" />
+                  <ProjectDescription>Méliuz's Referral Program | 2019</ProjectDescription>
+                </a>
+              </Link>
           </Projects>
         </Presentation>
         <Copyright>
@@ -68,3 +55,5 @@ export default function Index() {
     </>
   );
 }
+
+export default Index;
