@@ -27,14 +27,55 @@ const Wrapper = styled.div`
   }
 `;
 
-const Folder = styled.div`
-  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('./background_partner.png');
+const FolderPartner = styled.div`
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('./1.jpeg');
   height: 400px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
 
+  & h2 {
+    color: green;
+    text-transform: uppercase;
+    margin: 0;
+    position: relative;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    font-size: 2rem;
+    transform: translate(-50%, -50%);
+  }
+`;
+
+const FolderChallenge = styled.div`
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('./background_challenge.jpeg');
+  height: 400px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+  & h2 {
+    color: green;
+    text-transform: uppercase;
+    margin: 0;
+    position: relative;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    font-size: 2rem;
+    transform: translate(-50%, -50%);
+  }
+`;
+
+const FolderReferral = styled.div`
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('./background_referral.jpeg');
+  height: 400px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
 
   & h2 {
     color: green;
@@ -82,6 +123,22 @@ const Subtitle = styled.h4`
   margin: 16px 0;
 `;
 
+const SkillsTitle = styled.h3`
+  margin-top: 24px;
+
+  @media only screen and (min-width: 768px) {
+    margin: 0;
+  }
+`;
+
+const Content = styled.p`
+  margin-top: 8px;
+`;
+
+const ToolsTitle = styled.h3`
+  margin-top: 24px;
+`;
+
 const Button = styled.span`
   background: #d3d3f0;
   color: black;
@@ -121,12 +178,17 @@ const Item = styled.span`
 `;
 
 export {
-  Folder,
+  FolderPartner,
+  SkillsTitle,
+  ToolsTitle,
+  FolderChallenge,
+  FolderReferral,
   FirstSection,
   SecondSection,
   Sections,
   Wrapper,
   Subtitle,
   Item,
-  Button
+  Button,
+  Content
 }

@@ -19,6 +19,10 @@ const Wrapper = styled.div`
     font-size: 29px;
     line-height: 39px;
   }
+
+  a {
+    text-decoration: none;
+  }
 `;
 
 const Presentation = styled.div`
@@ -107,10 +111,6 @@ const ProjectDescription = styled.p`
   color: white;
   text-transform: uppercase;
   font-weight: bold;
-
-  @media only screen and (min-width: 768px) {
-    display: none;
-  }
 `;
 
 export {

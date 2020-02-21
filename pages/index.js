@@ -28,7 +28,7 @@ const Index = () => {
           <MainProject>
             <Link href="/partner">
               <a>
-                <Img src="1.png" alt="Méliuz's Partner Page | 2019" />
+                <Img src="1.jpeg" alt="Méliuz's Partner Page | 2019" />
                 <ProjectDescription>Méliuz's Partner Page | 2019</ProjectDescription>
               </a>
             </Link>
@@ -36,14 +36,14 @@ const Index = () => {
           <Projects>
               <Link href="/challenge">
                 <a>
-                  <Img src="2.png" alt="Méliuz's Challenge | 2018" />
+                  <Img src="2.jpeg" alt="Méliuz's Challenge | 2018" />
                   <ProjectDescription>Méliuz's Challenge | 2018</ProjectDescription>
                 </a>
               </Link>
               <Link href="/referral">
                 <a>
-                  <Img src="3.png" alt="Méliuz's Referral Program | 2019" />
-                  <ProjectDescription>Méliuz's Referral Program | 2019</ProjectDescription>
+                  <Img src="3.jpeg" alt="Méliuz's User Referral Page | 2019" />
+                  <ProjectDescription>Méliuz's User Referral Page | 2019</ProjectDescription>
                 </a>
               </Link>
           </Projects>

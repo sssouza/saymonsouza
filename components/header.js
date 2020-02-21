@@ -11,7 +11,11 @@ const Header = () => {
   return (
     <Wrapper>
       <HeaderMobile>
-        <h1>Saymon Souza</h1>
+        <Link href="/">
+          <a>
+            <h1>Saymon Souza</h1>
+          </a>
+        </Link>
         <img src="sand.png" />
       </HeaderMobile>
       <HeaderDesktop>
