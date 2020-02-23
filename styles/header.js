@@ -5,6 +5,10 @@ const Wrapper = styled.div`
   justify-content: center;
   background-color: #F3F4FB;
 
+  .active {
+    font-weight: bold;
+  }
+
   a {
     text-decoration: none;
   }

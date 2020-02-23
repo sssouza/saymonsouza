@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
+import { useRouter } from "next/router";
 
 import {
   Wrapper,
@@ -12,6 +13,8 @@ import {
 const Header = () => {
   const [open, setOpen] = useState(false);
 
+  const router = useRouter();
+
   return (
     <Wrapper>
       <HeaderMobile>
@@ -22,20 +25,20 @@ const Header = () => {
         </Link>
         <Burger open={open} onClick={()=>setOpen(!open)}><div /><div /><div /></Burger>
         <Menu open={open}>
-          <Link href="/"><a>Work</a></Link>
-          <Link href="/about"><a>About</a></Link>
+          <Link href="/"><a className={router.pathname !== "/about" ? "active" : ""}>WORK</a></Link>
+          <Link href="/about"><a className={router.pathname === "/about" ? "active" : ""}>ABOUT</a></Link>
         </Menu>
       </HeaderMobile>
       <HeaderDesktop>
         <ul>
           <li>
             <Link href="/">
-              <a>WORK</a>
+              <a className={router.pathname !== "/about" ? "active" : ""}>WORK</a>
             </Link>
           </li>
           <li>
             <Link href="/about">
-              <a>ABOUT</a>
+              <a className={router.pathname === "/about" ? "active" : ""}>ABOUT</a>
             </Link>
           </li>
         </ul>

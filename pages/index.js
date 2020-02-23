@@ -14,6 +14,7 @@ import {
   Img,
   Copyright,
   ProjectDescription,
+  Wrap
 } from '../styles/home';
 
 const Index = () => {
@@ -28,7 +29,9 @@ const Index = () => {
           <MainProject>
             <Link href="/partner">
               <a>
-                <Img src="1.jpeg" alt="Méliuz's Partner Page | 2019" />
+                <Wrap data-content="Méliuz's Partner Page | 2019">
+                  <Img src="1.jpeg" alt="Méliuz's Partner Page | 2019" />
+                </Wrap>
                 <ProjectDescription>Méliuz's Partner Page | 2019</ProjectDescription>
               </a>
             </Link>
@@ -36,13 +39,17 @@ const Index = () => {
           <Projects>
               <Link href="/challenge">
                 <a>
-                  <Img src="2.jpeg" alt="Méliuz's Challenge | 2018" />
+                  <Wrap data-content="Méliuz's Challenge | 2018">
+                    <Img src="2.jpeg" alt="Méliuz's Challenge | 2018" />
+                  </Wrap>
                   <ProjectDescription>Méliuz's Challenge | 2018</ProjectDescription>
                 </a>
               </Link>
               <Link href="/referral">
                 <a>
-                  <Img src="3.jpeg" alt="Méliuz's User Referral Page | 2019" />
+                  <Wrap data-content="Méliuz's User Referral Page | 2019">
+                    <Img src="3.jpeg" alt="Méliuz's User Referral Page | 2019" />
+                  </Wrap>
                   <ProjectDescription>Méliuz's User Referral Page | 2019</ProjectDescription>
                 </a>
               </Link>
