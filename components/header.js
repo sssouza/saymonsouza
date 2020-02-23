@@ -1,13 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Link from 'next/link';
 
 import {
   Wrapper,
   HeaderDesktop,
   HeaderMobile,
+  Burger,
+  Menu
 } from '../styles/header';
 
 const Header = () => {
+  const [open, setOpen] = useState(false);
+
   return (
     <Wrapper>
       <HeaderMobile>
@@ -16,7 +20,11 @@ const Header = () => {
             <h1>Saymon Souza</h1>
           </a>
         </Link>
-        <img src="sand.png" />
+        <Burger open={open} onClick={()=>setOpen(!open)}><div /><div /><div /></Burger>
+        <Menu open={open}>
+          <Link href="/"><a>Work</a></Link>
+          <Link href="/about"><a>About</a></Link>
+        </Menu>
       </HeaderMobile>
       <HeaderDesktop>
         <ul>
